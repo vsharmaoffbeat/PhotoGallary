@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Photo Gallary";
+}
+
+<div class="container" ng-controller="photoGallaryController">
+    <div class="search">
+        <div class="field">
+            <input type="text" ng-model="searchTag" class="blink" value="Search" />
+        </div>
+        <input type="button" ng-click="Search();" value="Search" class="search-btn notext" />
+
+    </div>
+    <!-- Gallery thumbnails -->
+    <div class="gallery">
+        <div class="row">
+            <div class="col-xs-12">
+                <div ng-show="IsLoading" class="text-center"><h1>Loading....</h1></div>
+            </div>
+            <div class="gallery-container">
+                <div ng-show="photos.items.length >0" class="col-lg-2 col-md-2 col-xs-6 col-center bottomPadding" ng-repeat="item in photos.items">
+                    <div>
+                        <img height="150px" width="150px" ng-src="{{ item.media.m }}" alt="{{item.title}}" title="{{item.tags}}">
+                    </div>
+                    <div>{{ item.title | limitTo: 20 }}{{item.title.length >20 ? '...' : ''}}</div>
+                </div>
+                <div ng-show="photos.items.length <=0">
+                    <div class="text-center">
+                        <h1>No Image Found</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

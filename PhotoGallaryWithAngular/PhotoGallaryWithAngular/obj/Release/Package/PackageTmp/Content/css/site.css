@@ -1,0 +1,87 @@
+body {
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+
+.spinner {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: url("../img/spinner.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: .8;
+}
+
+.bottomPadding {
+    padding-bottom:75px;
+}
+.gallery .thumb {
+    margin: 20px auto;
+}
+
+.gallery .error-wrapper {
+    margin: 20px 0;
+}
+
+    .gallery .error-wrapper .error {
+        font-style: italic;
+    }
+
+
+footer {
+    margin-top: 50px;
+    color: #333;
+}
+
+    footer .footer-content {
+        text-align: right;
+        font-size: 0.7em;
+    }
+
+        footer .footer-content p {
+            margin-bottom: 3px;
+        }
+
+    footer .flickr-notice {
+        font-style: italic;
+        font-size: 0.9em;
+    }
+
+
+.search {
+    text-align: right;
+}
+
+.field {
+    display: inline;
+}
+
+
+input[type="text"] {
+    color: #585858;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 1px 1px #ccc;
+    background: rgba(238,238,238,0.1);
+}
+
+.blink {
+    height: 25px;
+}
+
+
+
+.search-btn {
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,.2);
+    border: 1px solid #ccc;
+    color: #fff;
+    background: #293f46;
+}
+
+    .search-btn:hover {
+        background: #dfdfdf;
+        color: #000;
+    }
